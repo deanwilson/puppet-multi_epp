@@ -28,4 +28,11 @@ describe 'multi_epp' do
     end
   end
 
+  describe 'when passed multi missing and a valid epp template' do
+    it 'should skip the missing and expand the valid epp template' do
+      is_expected.to run.with_params(['notreal/doesntexist.epp', 'single_match/hello.epp', 'notreal/doesntexist2.epp']).and_return(/Hello EPP world/)
+    end
+  end
+
+
 end
