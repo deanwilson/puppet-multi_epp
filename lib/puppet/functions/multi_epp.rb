@@ -3,9 +3,10 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
   dispatch :no_param do
   end
 
-  dispatch :templates_only do
+  dispatch :epp_templates do
     scope_param
-    repeated_param 'Array[String]', :templates
+    param 'Array[String]', :templates
+    optional_param 'Hash', :params
   end
 
 
@@ -13,7 +14,7 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
     raise ArgumentError, "#{self.class.name}(): must be provided at least one epp template"
   end
 
-  def templates_only(scope, templates)
+  def epp_templates(scope, templates, params = {})
 
     template_path = nil
     contents = nil
@@ -21,7 +22,7 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
 
     templates.each do |template_file|
       if template_path = Puppet::Parser::Files.find_template(template_file, env_name)
-        contents = call_function('epp', template_path, {})
+        contents = call_function('epp', template_path, params)
 
         break # exit the loop as soon as we match a file
       end
