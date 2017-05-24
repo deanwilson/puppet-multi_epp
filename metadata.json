@@ -1,0 +1,31 @@
+{
+  "name": "deanwilson-multi_epp",
+  "version": "0.1.0",
+  "author": "deanwilson",
+  "summary": "Puppet function for selecting from multiple epp template sources",
+  "license": "Apache-2.0",
+  "source": "https://github.com/deanwilson/puppet-multi_epp.git",
+  "project_page": "https://github.com/deanwilson/puppet-multi_epp",
+  "issues_url": "https://github.com/deanwilson/puppet-multi_epp/issues",
+  "description": "Puppet function for selecting from multiple epp template sources",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    },
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Fedora"
+    },
+    {
+      "operatingsystem": "CentOS"
+    }
+  ]
+}

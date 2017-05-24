@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 group :development, :test do
+  gem 'metadata-json-lint', '1.1.0'
   gem 'puppetlabs_spec_helper', '2.1.2'
   gem 'rake', '12.0.0'
   gem 'rspec', '3.6.0'
