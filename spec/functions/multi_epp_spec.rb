@@ -8,4 +8,18 @@ describe 'multi_epp' do
     end
   end
 
+  describe 'when no templates are found' do
+    it 'should raise an ArgumentError' do
+      is_expected.to run.with_params(['fakefile.epp', 'anotherfakefile.epp']).and_raise_error(ArgumentError, /No match.+anotherfakefile.epp/)
+    end
+  end
+
+  ################## Valid usages
+
+  describe 'when passed a valid epp template' do
+    it 'should expand it' do
+      is_expected.to run.with_params(['single_match/hello.epp']).and_return(/Hello EPP world/)
+    end
+  end
+
 end
