@@ -5,7 +5,7 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
 
   dispatch :templates_only do
     scope_param
-    repeated_param 'Array[String]', :templates
+    param 'Array[String]', :templates
   end
 
 
