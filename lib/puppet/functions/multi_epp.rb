@@ -6,7 +6,7 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
   dispatch :epp_templates do
     scope_param
     param 'Array[String]', :templates
-    optional_param 'Hash', :params
+    optional_param 'Hash[Pattern[/^\w+$/], Any]', :parameters
   end
 
 
