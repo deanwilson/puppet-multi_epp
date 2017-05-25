@@ -14,6 +14,13 @@ describe 'multi_epp' do
     end
   end
 
+  # this is essentially testing the underlying function, which isn't great.
+  describe 'when an invalid templates is found' do
+    it 'should raise an ArgumentError' do
+      is_expected.to run.with_params(['single_match/invalid_name.epp']).and_raise_error(ArgumentError, /Syntax error/)
+    end
+  end
+
   ################## Valid usages
 
   describe 'when passed a valid epp template' do
