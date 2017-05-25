@@ -38,7 +38,7 @@ describe 'multi_epp' do
   describe 'when passed a valid epp template and a value' do
     it 'should expand the epp template' do
       is_expected.to run.with_params(
-        ['single_match/dynamic_name.epp'], { 'name' => 'Dean' }
+        ['single_match/dynamic_name.epp'], 'name' => 'Dean'
       ).and_return(/Hello Dean/)
     end
   end
