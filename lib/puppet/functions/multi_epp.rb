@@ -1,5 +1,4 @@
 Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunction) do
-
   dispatch :no_param do
   end
 
@@ -8,7 +7,6 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
     param 'Array[String]', :templates
     optional_param 'Hash[Pattern[/^\w+$/], Any]', :parameters
   end
-
 
   def no_param
     raise ArgumentError, "#{self.class.name}(): must be provided at least one epp template"
@@ -35,5 +33,4 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
 
     contents
   end
-
 end
