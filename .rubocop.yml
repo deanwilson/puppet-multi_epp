@@ -1,2 +1,21 @@
-Metrics/LineLength:
-  Max: 100
+AllCops:
+  NewCops: enable
+
+Bundler/DuplicatedGem:
+  Enabled: false
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe']
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: 'compact'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
