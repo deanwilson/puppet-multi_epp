@@ -13,17 +13,15 @@ Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunctio
   end
 
   def epp_templates(scope, templates, params = {})
-
     template_path = nil
     contents = nil
     env_name = scope.compiler.environment
 
     templates.each do |template_file|
-      if template_path = Puppet::Parser::Files.find_template(template_file, env_name)
-        contents = call_function('epp', template_path, params)
+      next unless (template_path = Puppet::Parser::Files.find_template(template_file, env_name))
 
-        break # exit the loop as soon as we match a file
-      end
+      contents = call_function('epp', template_path, params)
+      break # exit the loop as soon as we match a file
     end
 
     if contents.nil?
