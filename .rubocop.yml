@@ -26,3 +26,9 @@ Style/ClassAndModuleChildren:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false
+
+RSpec/ImplicitSubject:
+  Enabled: false
