@@ -4,7 +4,7 @@ The `multi_epp` puppet function allows you to list multiple
 [Embedded Puppet (EPP)](https://docs.puppet.com/puppet/latest/lang_template_epp.html)
 template files and use the first one that exists.
 
-[![Build Status](https://travis-ci.org/deanwilson/puppet-multi_epp.svg?branch=master)](https://travis-ci.org/deanwilson/puppet-multi_epp)
+[![Build Status](https://travis-ci.org/deanwilson/puppet-multi_epp.svg?branch=main)](https://travis-ci.org/deanwilson/puppet-multi_epp)
 [![Puppet Forge](https://img.shields.io/puppetforge/v/deanwilson/multi_epp.svg)](https://forge.puppetlabs.com/deanwilson/multi_epp)
 
 The most common usage is to declare multiple files, most specific to
