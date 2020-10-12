@@ -5,7 +5,7 @@ group :development, :test do
   gem 'puppetlabs_spec_helper', '2.15.0'
   gem 'rake', '13.0.1'
   gem 'rspec', '3.9.0'
-  gem 'rubocop', '0.92.0'
+  gem 'rubocop', '0.93.0'
   gem 'rubocop-rspec', '1.43.2'
 end
 
