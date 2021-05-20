@@ -8,7 +8,7 @@ Bundler/DuplicatedGem:
   Enabled: false
 
 Metrics/BlockLength:
-  ExcludedMethods: ['describe']
+  IgnoredMethods: ['describe']
   Max: 35
 
 Metrics/MethodLength:
