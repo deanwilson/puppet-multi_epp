@@ -7,7 +7,7 @@ group :development, :test do
   gem 'rake', '13.0.3'
   gem 'rspec', '3.10.0'
   gem 'rubocop', '~> 1.0'
-  gem 'rubocop-rspec', '~> 2.2.0'
+  gem 'rubocop-rspec', '~> 2.3.0'
 end
 
 if (puppetversion = ENV['PUPPET_GEM_VERSION'])
