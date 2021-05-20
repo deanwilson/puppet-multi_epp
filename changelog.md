@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Move from andrewmcodes/rubocop-linter-action to a more basic gem approach [PR#65](https://github.com/deanwilson/puppet-multi_epp/pull/65)
 
 ## [1.0.0] - 2021-05-20
 ### Added

@@ -1,5 +1,7 @@
 Puppet::Functions.create_function(:multi_epp, Puppet::Functions::InternalFunction) do
   dispatch :no_param do
+    # display a nicer error message than the default when given no template names
+    # calls `def no_param` below
   end
 
   dispatch :epp_templates do
