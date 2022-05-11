@@ -10,7 +10,7 @@ group :development, :test do
   gem 'rubocop-rspec', '~> 2.10.0'
 end
 
-if (puppetversion = ENV['PUPPET_GEM_VERSION'])
+if (puppetversion = ENV.fetch('PUPPET_GEM_VERSION', nil))
   gem 'puppet', puppetversion, require: false
 else
   gem 'puppet', require: false
