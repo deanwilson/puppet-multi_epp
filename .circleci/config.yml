@@ -9,7 +9,7 @@ jobs:
           name: "Install the dependencies"
           command: bundle install --jobs=4 --retry=3
           environment:
-            PUPPET_GEM_VERSION: "~> 7.6.1"
+            PUPPET_GEM_VERSION: "~> 7.24"
       - run:
           name: "Run the specs"
           command: bundle exec rake spec

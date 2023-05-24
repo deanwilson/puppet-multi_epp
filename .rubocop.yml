@@ -1,5 +1,6 @@
 require:
   - rubocop-rspec
+  - rubocop-rake
 
 AllCops:
   NewCops: enable
@@ -8,7 +9,6 @@ Bundler/DuplicatedGem:
   Enabled: false
 
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
   Max: 35
 
 Metrics/MethodLength:
