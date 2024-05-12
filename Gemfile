@@ -8,7 +8,7 @@ group :development, :test do
   gem 'rspec', '3.13.0'
   gem 'rubocop', '~> 1.63.5', require: false
   gem 'rubocop-rake', require: false
-  gem 'rubocop-rspec', '~> 2.25.0', require: false
+  gem 'rubocop-rspec', '~> 2.29.1', require: false
 end
 
 if (puppetversion = ENV.fetch('PUPPET_GEM_VERSION', nil))
