@@ -5,7 +5,7 @@ group :development, :test do
   gem 'metadata-json-lint', '4.2.1'
   gem 'puppetlabs_spec_helper', '~> 8.0.0'
   gem 'rake', '13.2.1'
-  gem 'rspec', '3.13.0'
+  gem 'rspec', '3.13.1'
   gem 'rubocop', '~> 1.75.1', require: false
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', '~> 3.6.0', require: false
