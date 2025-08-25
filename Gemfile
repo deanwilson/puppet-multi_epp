@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 group :development, :test do
   gem 'bundler-stats', '2.4.0'
-  gem 'metadata-json-lint', '4.2.1'
+  gem 'metadata-json-lint', '5.0.0'
   gem 'puppetlabs_spec_helper', '~> 8.0.0'
   gem 'rake', '13.3.0'
   gem 'rspec', '3.13.1'
